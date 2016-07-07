@@ -16,8 +16,12 @@ class HomePageViewController: UIViewController, CirCleViewDelegate {
     private var numbers: [Int] = [] // cell 高度
     private var longPressGesture: UILongPressGestureRecognizer!
     
+    private var cellContensTuples:([UIImage],[UIImage]) = ([],[])
+    
     private var titlesArray: [UIImage] = []
     private var imagesArray: [UIImage] = []
+    
+    private var sectionArray: [UIImage] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -131,10 +135,13 @@ class HomePageViewController: UIViewController, CirCleViewDelegate {
 
 extension HomePageViewController: CHTCollectionViewDelegateWaterfallLayout {
     
-    //  cell 横向间距
+    //  cell 间距布局
     func collectionView (collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout,
                          sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
-        return CGSize(width: Int((view.bounds.width - 20)/3), height: numbers[indexPath.item])
+        let size = CGSize(width: Int((view.bounds.width - 20)/3), height: numbers[indexPath.item])
+        print("cell size :\(size)")
+        
+        return size
     }
 }
 
@@ -149,9 +156,7 @@ extension HomePageViewController: UICollectionViewDataSource {
 //        cell.textLabel.text = "\(numbers[indexPath.item])"
         cell.titleImageView.image = titlesArray[indexPath.item]
         cell.coverImageView.image = imagesArray[indexPath.item]
-        print("cellheight \(cell.frame.width)")
-        print("cellheight \(cell.frame.height)")
-        cell.layer.borderWidth = 0.3
+
         return cell
     }
     
