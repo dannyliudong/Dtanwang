@@ -72,14 +72,17 @@ class HomePageViewController: UIViewController, CirCleViewDelegate {
             collectionView.updateInteractiveMovementTargetPosition(gesture.locationInView(gesture.view!))
         case UIGestureRecognizerState.Ended:
             collectionView.endInteractiveMovement()
-            collectionView.stopWiggle()
+            
+            let time: NSTimeInterval = 0.2
+            let delay = dispatch_time(DISPATCH_TIME_NOW, Int64(time * Double(NSEC_PER_SEC)))
+            dispatch_after(delay, dispatch_get_main_queue()) {
+                self.collectionView.stopWiggle()
+            }
+            
         default:
             collectionView.cancelInteractiveMovement()
         }
     }
-    
-
-    
     
     func initCirCleView() {
         
