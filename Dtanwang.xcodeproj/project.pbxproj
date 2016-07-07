@@ -24,13 +24,14 @@
 		A0C25E451D2CFEA4003F3D48 /* MILCarouselCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C25E411D2CFEA4003F3D48 /* MILCarouselCollectionViewFlowLayout.swift */; };
 		A0C25E471D2D107F003F3D48 /* CirCleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C25E461D2D107F003F3D48 /* CirCleView.swift */; };
 		A0C25E491D2D10AC003F3D48 /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C25E481D2D10AC003F3D48 /* HomePageViewController.swift */; };
+		A0FED0061D2E61090079A3CC /* CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FED0051D2E61090079A3CC /* CollectionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A00DF3AF1D2DEDE90031F24B /* HeaderPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderPageViewController.swift; sourceTree = "<group>"; };
 		A00DF3B51D2DFC070031F24B /* WaterfallCollectionViewLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaterfallCollectionViewLayout.swift; sourceTree = "<group>"; };
 		A00DF3B81D2DFC6E0031F24B /* TextCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextCollectionViewCell.swift; sourceTree = "<group>"; };
-		A00E8C841D2BB8B0005D702B /* Dtanwang.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dtanwang.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A00E8C841D2BB8B0005D702B /* D弹.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "D弹.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A00E8C871D2BB8B0005D702B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A00E8C8C1D2BB8B0005D702B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A00E8C8E1D2BB8B0005D702B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -46,6 +47,7 @@
 		A0C25E411D2CFEA4003F3D48 /* MILCarouselCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MILCarouselCollectionViewFlowLayout.swift; sourceTree = "<group>"; };
 		A0C25E461D2D107F003F3D48 /* CirCleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CirCleView.swift; sourceTree = "<group>"; };
 		A0C25E481D2D10AC003F3D48 /* HomePageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
+		A0FED0051D2E61090079A3CC /* CollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,7 +88,7 @@
 		A00E8C851D2BB8B0005D702B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A00E8C841D2BB8B0005D702B /* Dtanwang.app */,
+				A00E8C841D2BB8B0005D702B /* D弹.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -102,6 +104,7 @@
 				A0C25E341D2CB33D003F3D48 /* LioLoopView */,
 				A00E8C871D2BB8B0005D702B /* AppDelegate.swift */,
 				A0C25E481D2D10AC003F3D48 /* HomePageViewController.swift */,
+				A0FED0051D2E61090079A3CC /* CollectionView.swift */,
 				A00E8C8B1D2BB8B0005D702B /* Main.storyboard */,
 				A0C25E321D2CAFBB003F3D48 /* DraggableCell.swift */,
 				A00E8C8E1D2BB8B0005D702B /* Assets.xcassets */,
@@ -157,7 +160,7 @@
 			);
 			name = Dtanwang;
 			productName = Dtanwang;
-			productReference = A00E8C841D2BB8B0005D702B /* Dtanwang.app */;
+			productReference = A00E8C841D2BB8B0005D702B /* D弹.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -214,6 +217,7 @@
 			files = (
 				A0C25E471D2D107F003F3D48 /* CirCleView.swift in Sources */,
 				A0C25E361D2CB358003F3D48 /* LioLoopView.swift in Sources */,
+				A0FED0061D2E61090079A3CC /* CollectionView.swift in Sources */,
 				A0C25E491D2D10AC003F3D48 /* HomePageViewController.swift in Sources */,
 				A00DF3B61D2DFC070031F24B /* WaterfallCollectionViewLayout.swift in Sources */,
 				A02127A61D2E384900340118 /* CellWebViewController.swift in Sources */,
@@ -343,7 +347,7 @@
 				INFOPLIST_FILE = Dtanwang/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.liudong.Dtanwang;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "D弹";
 				PROVISIONING_PROFILE = "8c4c2f8e-c1fc-4c0b-add1-f94c5b203ba4";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -356,7 +360,7 @@
 				INFOPLIST_FILE = Dtanwang/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.liudong.Dtanwang;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "D弹";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;

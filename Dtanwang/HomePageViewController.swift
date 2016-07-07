@@ -12,7 +12,8 @@ class HomePageViewController: UIViewController, CirCleViewDelegate {
     
     var circleView:CirCleView!
     
-    @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var collectionView: CollectionView!
+    
     private var numbers: [Int] = [] // cell 高度
     private var longPressGesture: UILongPressGestureRecognizer!
     
@@ -22,6 +23,9 @@ class HomePageViewController: UIViewController, CirCleViewDelegate {
     private var imagesArray: [UIImage] = []
     
     private var sectionArray: [UIImage] = []
+    
+    var shakeWhenMoveing = false
+//    var editing = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -57,6 +61,9 @@ class HomePageViewController: UIViewController, CirCleViewDelegate {
         switch(gesture.state) {
             
         case UIGestureRecognizerState.Began:
+            
+            collectionView.startWiggle()
+            
             guard let selectedIndexPath = self.collectionView.indexPathForItemAtPoint(gesture.locationInView(self.collectionView)) else {
                 break
             }
@@ -65,10 +72,13 @@ class HomePageViewController: UIViewController, CirCleViewDelegate {
             collectionView.updateInteractiveMovementTargetPosition(gesture.locationInView(gesture.view!))
         case UIGestureRecognizerState.Ended:
             collectionView.endInteractiveMovement()
+            collectionView.stopWiggle()
         default:
             collectionView.cancelInteractiveMovement()
         }
     }
+    
+
     
     
     func initCirCleView() {
@@ -143,6 +153,7 @@ extension HomePageViewController: CHTCollectionViewDelegateWaterfallLayout {
         
         return size
     }
+    
 }
 
 extension HomePageViewController: UICollectionViewDataSource {

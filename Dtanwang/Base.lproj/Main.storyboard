@@ -10,7 +10,7 @@
         <!--D弹网-->
         <scene sceneID="qc8-HQ-7bS">
             <objects>
-                <viewController id="Ghf-D9-5bX" customClass="HomePageViewController" customModule="Dtanwang" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Ghf-D9-5bX" customClass="HomePageViewController" customModule="D弹" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="f4u-Xn-VTa"/>
                         <viewControllerLayoutGuide type="bottom" id="VS3-wy-BPl"/>
@@ -19,7 +19,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Pu2-iL-BRe">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Pu2-iL-BRe" customClass="CollectionView" customModule="D弹" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="144" width="600" height="407"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="LJz-Ww-OTk">
@@ -29,7 +29,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" reuseIdentifier="Cell" id="Ipy-LH-RWc" customClass="TextCollectionViewCell" customModule="Dtanwang" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" reuseIdentifier="Cell" id="Ipy-LH-RWc" customClass="TextCollectionViewCell" customModule="D弹" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="114" width="140" height="160"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -115,7 +115,7 @@
         <!--Cell Web View Controller-->
         <scene sceneID="cXX-U5-nCN">
             <objects>
-                <viewController id="rcs-uv-96m" customClass="CellWebViewController" customModule="Dtanwang" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="rcs-uv-96m" customClass="CellWebViewController" customModule="D弹" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ebq-s8-X7k"/>
                         <viewControllerLayoutGuide type="bottom" id="nBR-lK-dte"/>
@@ -154,7 +154,7 @@
         <!--Header Page View Controller-->
         <scene sceneID="Ggu-O0-kpc">
             <objects>
-                <viewController id="Nvp-qK-fQa" customClass="HeaderPageViewController" customModule="Dtanwang" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Nvp-qK-fQa" customClass="HeaderPageViewController" customModule="D弹" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="FEf-CI-uk3"/>
                         <viewControllerLayoutGuide type="bottom" id="7en-DE-MMZ"/>
@@ -266,7 +266,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6g9-h1-etD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1598" y="-65"/>
+            <point key="canvasLocation" x="1768" y="-289"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Eue-gX-RDI">
